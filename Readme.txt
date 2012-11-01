@@ -24,19 +24,19 @@ PreRequisite:
 
     ruby 1.9.3
 
-    run:
+    run: gem install bundler
 
-    gem install bundler
+    go to application path and run: bundle install
 
+Run the application in console:
     go to application path and run:
+        ruby billing.rb
 
-    bundle install
-
-    run tests:
-        go to application path and run:
+Run tests:
+    go to application path and run:
         ruby test.rb
 
-    After running the test you can see the code coverage:
-        open in browser: application_path/coverage/index.html
+After running the test you can see the code coverage:
+    open in browser: application_path/coverage/index.html
 
 
