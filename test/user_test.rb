@@ -1,4 +1,4 @@
-require './test/test_helper'
+require './test_helper'
 class UserTest < Test::Unit::TestCase
   def test_initialize_user
     user = User.new

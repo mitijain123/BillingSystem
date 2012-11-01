@@ -6,6 +6,10 @@ Assumptions:
 
     {"groceries" => {"plates" => 100}, "cloths" => {"shirt" => 300, "pant" => 400}}
 
+  You can change this billing items in the billing_item.rb file.
+  You can add more Items in the groceries and cloths and also can add more categories, with different prices.
+
+
 Here:
     - groceries and cloths are 2 categories
     - plates, shirt and pant are the items

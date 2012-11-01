@@ -1,6 +1,11 @@
-require './test/test_helper'
+require './test_helper'
 require 'ostruct'
 class DiscountTest < Test::Unit::TestCase
+  def setup
+    BillingItem.stubs(:get_billing_items).
+      returns({"groceries" => {"plates" => 100}, "cloths" => {"shirt" => 300, "pant" => 400}})
+  end
+
   def test_discount_new
     discount = Discount.new
     assert_equal 0, discount.total_net_discount_price

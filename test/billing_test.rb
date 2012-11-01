@@ -1,8 +1,13 @@
 require 'simplecov'
 SimpleCov.start
-require './test/test_helper'
+require './test_helper'
 
 class BillingTest < Test::Unit::TestCase
+  def setup
+    BillingItem.expects(:get_billing_items).
+      returns({"groceries" => {"plates" => 100}, "cloths" => {"shirt" => 300, "pant" => 400}})
+  end
+
   def test_billing_for_2_year_customer
     User.expects(:gets).returns('1')
     billing = Billing::Billing.new.calculate_billing_price
