@@ -33,12 +33,14 @@ PreRequisite:
     go to application path and run: bundle install
 
 Run the application in console:
-    go to application path and run:
-        ruby billing.rb
+    1. git clone git@github.com:mitijain123/BillingSystem.git
+    2. go to application path and run: ruby billing.rb
 
 Run tests:
-    go to application path and run:
-        ruby test.rb
+    1. git clone git@github.com:mitijain123/BillingSystem.git
+    2. go to application path and run:
+        - bundle install
+        - ruby test.rb
 
 After running the test you can see the code coverage:
     open in browser: application_path/coverage/index.html
